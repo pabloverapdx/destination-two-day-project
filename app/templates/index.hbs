@@ -1,0 +1,14 @@
+<h1>Hello World</h1>
+
+
+  {{#each model as |post|}}
+
+  <li>{{post.title}}{{post.author}}</li>
+
+  {{/each}}
+
+
+{{new-post savePost2="savePost3"}}
+
+{{#link-to 'about'}}About{{/link-to}}
+{{#link-to 'contact'}}Contact{{/link-to}}
